@@ -20,7 +20,7 @@ This project provides an easy setup for launching BurpSuite Pro using `burploade
 ## Download
 
 You can download BurpSuite files from the following link:
-[Download BurpSuite](https://firebasestorage.googleapis.com/v0/b/snigebrawlaereht.appspot.com/o/uploads%2Fburpsuite.zip?alt=media&token=216de97b-2f11-4c6d-a3fa-9d7c50b57d15)
+[Download BurpSuite](https://ihefty.github.io/BurpSuite-Loader/)
 
 ## Requirements
 
